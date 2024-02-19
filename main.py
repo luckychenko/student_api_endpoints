@@ -72,7 +72,7 @@ def delete_student(id: str):
     return {"message": "Student deleted successfully"}
 
 
-
+# utility function to get student and throw error if not found
 def find_student(id: str, students: dict):
     student = students.get(id)
     if not student:
